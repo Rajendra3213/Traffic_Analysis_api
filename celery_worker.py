@@ -20,3 +20,8 @@ def getLog():
 def analyzeData():
     print("Analyzing data..")
     return {"output":"Hello world!"}
+
+@app.task
+def singleSessionAnalysis(sessionID:str):
+    print("Analyzing data..")
+    return {"output":"Hello world!"}
